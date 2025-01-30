@@ -32,6 +32,16 @@
 
 .ul_menu li{
     list-style: none;
+    font-family: "Monserrat-SemiBold";
+}
+
+.ul_menu li a{
+    color: var(--font-color-1);
+    text-decoration: none;
+}
+
+.ul_menu li a:hover{
+    cursor: pointer;
 }
 
 /*****main*****/
@@ -61,11 +71,43 @@
     color: var(--font-color-1)
 }
 
+.article_home span{
+    font-size: 28px;
+    font-family: "Montserrat-SemiBold";
+}
+
+.article_home h1{
+    font-size: 28px;
+    font-family: "Montserrat-SemiBold";
+}
+
+.article_home p{
+    width: 340px;
+    font-family: "Montserrat-Medium";
+}
+
+/***** section menu *****/
+
 .section_icon{
     background: #071917;
     display: flex;
     justify-content: space-evenly;
 
+}
+
+.my_about{
+    background-color: #071917;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+
+    img{
+    background-color: var(--color-gradient-2);
+    justify-content: center;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 99svw;
+    }
 }
 
 /***** version movil *****/
