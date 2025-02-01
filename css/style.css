@@ -27,17 +27,19 @@
     display: flex;
     gap: 100px;
     padding-right: 100px;
-    color: var(--font-color-1)
+    color: var(--font-color-1);
+    font-family: "Montserrat-SemiBold";
 }
 
 .ul_menu li{
     list-style: none;
-    font-family: "Monserrat-SemiBold";
+    font-family: "Montserrat-SemiBold";
 }
 
 .ul_menu li a{
     color: var(--font-color-1);
     text-decoration: none;
+    font-family: "Montserrat-SemiBold";
 }
 
 .ul_menu li a:hover{
@@ -56,7 +58,7 @@
     background-size: cover;
     background-position: center 10%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(#376e4072, #071917), url(../storage/img/banner.png);
+    background-image: linear-gradient(#376e4072, #071917 100%), url(../storage/img/banner.png);
     }
 
 .article_home{
@@ -77,7 +79,7 @@
 }
 
 .article_home h1{
-    font-size: 28px;
+    font-size: 75px;
     font-family: "Montserrat-SemiBold";
 }
 
@@ -101,13 +103,80 @@
     padding-top: 32px;
     flex-direction: column;
 
-    img{
-    background-color: var(--color-gradient-2);
-    justify-content: center;
-    padding-left: 23px;
-    padding-right: 23px;
-    width: 99svw;
+    .articleurban{
+        
+        img{
+            background-color: var(--color-gradient-2);
+            justify-content: center;
+            padding-left: 23px;
+            padding-right: 23px;
+            width: 99svw;
     }
+    
+        span{
+            color: #eee;
+            position: absolute;
+            padding-left: 16svh;
+            padding-top: 52svw;
+            font-size: 8svh;
+            font-family: "Montserrat-SemiBold";
+    }
+    }
+    
+    .articledesign{
+        background-color: #071917;
+        display: flex;
+        padding-top: 32px;
+        flex-direction: column;
+
+        img{
+            background-color: var(--color-gradient-2);
+            justify-content: center;
+            padding-left: 23px;
+            padding-right: 23px;
+            padding-top: 0px;
+            width: 99svw;
+    }
+
+        span{
+            color: #eee;
+            position: absolute;
+            padding-left: 16svh;
+            padding-top: 48svw;
+            font-size: 8.5svh;
+            font-family: "Montserrat-SemiBold";
+    }
+    }
+
+    .articleart{
+
+        img{
+            background-color: var(--color-gradient-2);
+            justify-content: center;
+            padding-left: 23px;
+            padding-right: 23px;
+            padding-top: 35px;
+            width: 99svw;
+            
+    }
+
+        span{
+            color: #eee;
+            position: absolute;
+            padding-left: 15svh;
+            padding-top: 48svw;
+            font-size: 8svh;
+            font-family: "Montserrat-SemiBold";
+    }
+    }
+
+.final_section{
+    background-color: #071917;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+}
+
 }
 
 /***** version movil *****/
@@ -116,30 +185,41 @@
     .header{
         /* background: red; */
     }
+
     .ul_menu{
         gap: 15px;
         padding-right: 15px;
     }
+
     .section_home{
         display: flex;
         justify-content: space-around;
     }
+
     .article_home{
         left: 0;
     }
+
     .article_home span{
         /* font-size: 1px; */
     }
+
     .article_home h1{
         font-size: 70px;
     }
+
     .section_icon{
         justify-content: space-around;
     }
+
     .section_icon img{
         width: 45px;
         height: 45;
         object-fit: contain;
+    }
+
+    .my_about h1{
+        padding-top: 95svh;
     }
 }
 
@@ -171,4 +251,177 @@
     .article_home{
         top: 25svh;
     }
+
+    .my_about{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+.titleCarrusel{
+    h1{
+        background-color: var(--color-3);
+        color: var(--color-1);
+        font-size: 45px;
+        font-family: "Montserrat-SemiBold";   
+        padding-left: 5svw;
+        padding-top: 3svh;
+    }
+
+    
+}
+
+
+.carousel {
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: row;
+    height: 68svh;
+    overflow-x: scroll;
+    
+    & > .carousel-item {
+      flex: 1;
+      flex-grow: 1;
+      min-width: 20svw;
+      background-color: #145E2A;
+      margin: 2svh;
+      border-radius: 35px;
+      
+    }   
+
+    button{
+        font-family: "Montserrat_Regular";
+        font-size: 3svh;
+        border-radius: 15px;
+        margin-left: 11svh;
+        height: 48px;
+        width: 15svh;
+        
+      }
+
+    .carousel-item {
+        padding-left: 1svw;
+        font-size: 1svw;
+        font-family: "Montserrat-SemiBold";
+    }
+
+    img{
+        padding-top: 1svw;
+        width: 18svw;
+        height: 26svh;
+        border-radius: 30px;
+
+    }
+
+    p{
+        padding-top: 2svh;
+        padding-block-end: 2svh;
+    }
+
+    .div__a{
+        height: 5svh;
+        width: 8svw;
+        background-color: #D9D9D9;
+        border-radius: 24px;
+        text-align: center;
+        
+
+        
+        
+    }
+
+    div a{
+        padding-top: 2svh;
+        color: black;
+        font-family: "Montserrat-SemiBold";
+        font-size: 1svw;
+        text-decoration: none;
+        
+    }
+  }
+
+  @media (max-width: 960px){
+    .carousel{
+        button{
+            font-family: "Montserrat_Regular";
+            font-size: 15px;
+            border-radius:30px;
+            margin-left: 40px;
+            height: 4svh;
+          }
+    }   
+  }
+  @media (max-width: 576px) {
+    .titleCarrusel h1{
+        font-size: 3svh;
+        padding-top: 1svh;
+    }
+
+    .carousel{
+        height: 45svh;
+        & > .carousel-item{
+            margin: 1svh;
+            border-radius: 35px;
+            width: 45svw;
+            min-width: 50svw;
+        }
+
+
+        .carousel-item {
+            padding-left: 1svw;
+            font-size: 2.5svw;
+            font-family: "Montserrat-SemiBold";
+        }
+    
+        .div__a{
+        height: 4svh;
+        width: 20svw;
+        border-radius: 24px;
+        text-align: center;
+        padding-top: 1.5svw;
+        color: black;
+        font-family: "Montserrat-SemiBold";
+        
+        a{
+            font-size: 1.5svh;
+        }
+        }
+
+        button{
+            font-family: "Montserrat_Regular";
+            font-size: 15px;
+            border-radius:30px;
+            margin-left: 40px;
+            height: 4svh;
+          }
+
+
+
+    }   
+
+    #imgcarru{
+        width: 47svw;
+        height: 22svh;
+        padding-top: 2svw;
+        padding-left: 1svw;
+        padding-right: 1svw;
+        
+    }
+
+    p{
+        padding-top: 1svh;
+        padding-block-end: 1svh;
+    }
+
+}
+
+footer{
+    background: var(--color-3);
+    display: flex;
+    justify-content: center;
+    gap: 36.5px;  
+    padding-top: 2svw;
 }
