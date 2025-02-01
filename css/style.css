@@ -420,6 +420,7 @@
 
 footer{
     background: var(--color-3);
+    color: none;
     display: flex;
     justify-content: center;
     gap: 36.5px;  
