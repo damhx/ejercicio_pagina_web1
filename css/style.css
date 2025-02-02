@@ -264,7 +264,7 @@
 .titleCarrusel{
     h1{
         background-color: var(--color-3);
-        color: var(--color-1);
+        color: var( --font-color-1);
         font-size: 45px;
         font-family: "Montserrat-SemiBold";   
         padding-left: 5svw;
@@ -299,6 +299,7 @@
         margin-left: 11svh;
         height: 48px;
         width: 15svh;
+        border: none;
         
       }
 
@@ -316,9 +317,14 @@
 
     }
 
+    h2{
+        color: var( --font-color-1);
+    }
+
     p{
         padding-top: 2svh;
         padding-block-end: 2svh;
+        color: var( --font-color-1);
     }
 
     .div__a{
@@ -335,7 +341,7 @@
 
     div a{
         padding-top: 2svh;
-        color: black;
+        color: var( --font-color-1);
         font-family: "Montserrat-SemiBold";
         font-size: 1svw;
         text-decoration: none;
